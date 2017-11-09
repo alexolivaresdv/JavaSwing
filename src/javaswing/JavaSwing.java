@@ -4,6 +4,8 @@
  * and open the template in the editor.
  */
 package javaswing;
+import gui2.Windows;
+import javax.swing.JFrame;
 
 /**
  *
@@ -14,8 +16,13 @@ public class JavaSwing {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public static void main(String[] args) 
+    {
+       Windows ventana = new Windows();
+       ventana.setVisible(true);
+       ventana.setBounds(0, 0, 600, 800);
+       ventana.setTitle("Mi primer interfaz grafica");
+       ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
     
 }
