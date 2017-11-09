@@ -29,6 +29,14 @@ public class Windows extends JFrame
         seleccion = new JRadioButton();
         boton = new JButton();
         
+        this.add(panel);//Recomendable agregar al JPanel al JFrame
+        panel.add(label);//Agregamos los elementos al JPanel
+        panel.add(texto);
+        panel.add(vereficador);
+        panel.add(seleccion);
+        panel.add(boton);
+        
+        
         label.setText("Nombre");
         boton.setText("Enviar");
         panel.setBackground(Color.BLUE);
